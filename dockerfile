@@ -1,4 +1,5 @@
-FROM node:latest
+FROM node:alpine
+WORKDIR /usr/app
 COPY ./ ./
 RUN npm install
 EXPOSE 8081
